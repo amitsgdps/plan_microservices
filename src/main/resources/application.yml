@@ -1,0 +1,13 @@
+logging:
+  level:
+    org.springframework: ERROR
+    com.infosys.infytel.plan: INFO
+  pattern:
+    console: "%d{YYYY-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+  file: R:\microservice_logs\plan.log
+  
+# %d{HH:mm:ss.SSS} formats the date in terms of hours, minutes, seconds, and milliseconds.
+# %level displays the severity of the log event. %C displays the name of the class that the log event originated from.
+#%t displays the Logger’s current thread. %m displays the event’s message. %p fr Priority.
+#Finally, %n adds a new line for the next event {1.}
